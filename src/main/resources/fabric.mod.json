@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "iterationmod",
+  "version": "${version}",
+  "name": "IterationMod",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/cadenream/IterationMod"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/iterationmod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.caden.iterationmod.client.IterationModClient"
+    ],
+    "main": [
+      "org.caden.iterationmod.IterationMod"
+    ]
+  },
+  "mixins": [
+    "iterationmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
